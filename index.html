@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+        .main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 504px;
+            width: 280px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+        }
+        .card:hover{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .skyblue{
+            background-color: #66d9fc;
+        }
+        .orange{
+            background-color: #ec4f36;
+        }
+        .white{
+            background-color: #ffffff;
+        }
+        .text-black{
+            color: #333 !important;
+        }
+        .info{
+            height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 50px 15px;
+            box-sizing: border-box;
+            margin-bottom: 28px;
+        }
+        .small-text{
+            display: block;
+            margin: 5px auto;
+            color: #efefef;
+        }
+        .large-text{
+            font-size: 30px;
+            font-weight: bold;
+            display: block;
+            margin: 2px auto 15px auto;
+            color: white;
+        }
+        .btn{
+            border: none;
+            height: 28px;
+            width: 100px;
+            color:brown;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #333;
+            transition: .5s;
+        }
+        .img-box{
+            height: 250px;
+            width: inherit;
+
+        }
+        .img-box img{
+            height: inherit;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card white">
+            <div class="info">
+                <span class="small-text text-black">A beautiful red headphone</span>
+                <span class="large-text text-black">Google Headphone</span>
+                <button class="btn">SHOP Now</button>
+            </div>
+            <div class="img-box">
+                <img src="./images/red_headphone.png" alt="">
+            </div>
+        </div>
+        <div class="card skyblue">
+            <div class="info">
+                <span class="small-text">A beautiful red headphone</span>
+                <span class="large-text">Google Headphone</span>
+                <button class="btn">SHOP Now</button>
+            </div>
+            <div class="img-box">
+                <img src="./images/red_headphone.png" alt="">
+            </div>
+        </div>
+        <div class="card orange">
+            <div class="info">
+                <span class="small-text">A beautiful red headphone</span>
+                <span class="large-text">Google Headphone</span>
+                <button class="btn">SHOP Now</button>
+            </div>
+            <div class="img-box">
+                <img src="./images/red_headphone.png" alt="">
+            </div>
+        </div>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+       $(".btn").click(function(){
+             alert("Thank you so much for shopping")
+        });
+    </script>
+</body>
+</html>
